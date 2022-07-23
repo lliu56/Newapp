@@ -27,7 +27,7 @@ def loadTokenizer ():
 @st.cache(allow_output_mutation= True)
 def loadModel ():
     xsumModel = PegasusForConditionalGeneration.from_pretrained('google/pegasus-xsum')
-    #largeModel = PegasusForConditionalGeneration.from_pretrained('google/pegasus-large')
+    largeModel = PegasusForConditionalGeneration.from_pretrained('google/pegasus-large')
     return xsumModel,largeModel
 
 ## summary fxn ## 
