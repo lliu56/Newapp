@@ -39,8 +39,8 @@ modelType = ('Short Summary (xsum)','Long Summary (Large)')
 
 #loading models 
 [xsumTokenizer , largeTokenizer] = sp.loadTokenizer()
-#[xsumModel, largeModel]= sp.loadModel()
-xsumModel = sp.loadModel()
+[xsumModel, largeModel]= sp.loadModel()
+
 
 ### select tokenizer and model based on user dropbox
 if selectedModel == modelType[0]:
